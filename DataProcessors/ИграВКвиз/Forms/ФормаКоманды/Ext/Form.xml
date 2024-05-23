@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Page name="СтраницаВыбораРаунда" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбора раунда</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбора раунда</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВыбораРаундаРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<Button name="Обновить" id="67">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Refresh</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="68"/>
+						</Button>
+						<Table name="Раунды" id="14">
+							<CommandBarLocation>None</CommandBarLocation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Раунды</DataPath>
+							<RowPictureDataPath>~Раунды.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="РаундыКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="РаундыКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="РаундыРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="РаундыСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>Раунды</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РаундыСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="РаундыСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РаундыСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>Раунды</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РаундыСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="РаундыСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РаундыУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>Раунды</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РаундыУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="РаундыУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">РаундыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РаундыРаунд" id="36">
+									<DataPath>Раунды.Раунд</DataPath>
+									<ContextMenu name="РаундыРаундКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="РаундыРаундРасширеннаяПодсказка" id="38"/>
+								</LabelField>
+								<CheckBoxField name="РаундыАктивный" id="27">
+									<DataPath>Раунды.Активный</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РаундыАктивныйКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="РаундыАктивныйРасширеннаяПодсказка" id="29"/>
+								</CheckBoxField>
+								<CheckBoxField name="РаундыЗавершен" id="30">
+									<DataPath>Раунды.Завершен</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РаундыЗавершенКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="РаундыЗавершенРасширеннаяПодсказка" id="32"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВводаОтвета" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввода ответа</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ввода ответа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВводаОтветаРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="71">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="72"/>
+							<ChildItems>
+								<Button name="ЗафиксироватьОтветы" id="69">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗафиксироватьОтветы</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СтрелкаВнизЗеленая</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ЗафиксироватьОтветыРасширеннаяПодсказка" id="70"/>
+								</Button>
+								<Button name="Назад" id="73">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.Назад</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ОтменитьДействие</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="74"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ОтветыНаВопросы" id="45">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ОтветыНаВопросы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОтветыНаВопросыКонтекстноеМеню" id="46"/>
+							<AutoCommandBar name="ОтветыНаВопросыКоманднаяПанель" id="47"/>
+							<ExtendedTooltip name="ОтветыНаВопросыРасширеннаяПодсказка" id="48"/>
+							<SearchStringAddition name="ОтветыНаВопросыСтрокаПоиска" id="49">
+								<AdditionSource>
+									<Item>ОтветыНаВопросы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтветыНаВопросыСтрокаПоискаКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ОтветыНаВопросыСтрокаПоискаРасширеннаяПодсказка" id="51"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОтветыНаВопросыСостояниеПросмотра" id="52">
+								<AdditionSource>
+									<Item>ОтветыНаВопросы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтветыНаВопросыСостояниеПросмотраКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ОтветыНаВопросыСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОтветыНаВопросыУправлениеПоиском" id="55">
+								<AdditionSource>
+									<Item>ОтветыНаВопросы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОтветыНаВопросыУправлениеПоискомКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="ОтветыНаВопросыУправлениеПоискомРасширеннаяПодсказка" id="57"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ОтветыНаВопросыВыбор</Event>
+								<Event name="BeforeAddRow">ОтветыНаВопросыПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ОтветыНаВопросыПередУдалением</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ОтветыНаВопросыНомерВопроса" id="58">
+									<DataPath>ОтветыНаВопросы.НомерВопроса</DataPath>
+									<Enabled>false</Enabled>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>N</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтветыНаВопросыНомерВопросаКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ОтветыНаВопросыНомерВопросаРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ОтветыНаВопросыТипОтвета" id="61">
+									<DataPath>ОтветыНаВопросы.ТипОтвета</DataPath>
+									<Visible>false</Visible>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтветыНаВопросыТипОтветаКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ОтветыНаВопросыТипОтветаРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<InputField name="ОтветыНаВопросыОтвет" id="64">
+									<DataPath>ОтветыНаВопросы.Ответ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ОтветыНаВопросыОтветКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ОтветыНаВопросыОтветРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИграВКвиз</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Раунды" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раунды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	КвизыРаунды.Ссылка КАК Ссылка,
+	КвизыРаунды.НомерСтроки КАК НомерСтроки,
+	КвизыРаунды.Раунд КАК Раунд,
+	КвизыРаунды.Завершен КАК Завершен,
+	ВЫБОР
+		КОГДА АктивныеРаунды.Раунд ЕСТЬ NULL
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК Активный
+ИЗ
+	Справочник.Квизы.Раунды КАК КвизыРаунды
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АктивныеРаунды КАК АктивныеРаунды
+		ПО КвизыРаунды.Раунд = АктивныеРаунды.Раунд
+			И КвизыРаунды.Ссылка = АктивныеРаунды.Квиз</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерСтроки</dcssch:dataPath>
+					<dcssch:field>НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Завершен</dcssch:dataPath>
+					<dcssch:field>Завершен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Раунд</dcssch:dataPath>
+					<dcssch:field>Раунд</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Активный</dcssch:dataPath>
+					<dcssch:field>Активный</dcssch:field>
+				</Field>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>НомерСтроки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийКвиз" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий квиз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Квизы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветыНаВопросы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответы на вопросы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерВопроса" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер вопроса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипОтвета" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип ответа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыОтветовНаВопрос</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ответ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОтветНаВопрос</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Вопрос" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Вопросы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Раунд" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раунд</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Раунды</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="ЗафиксироватьОтветы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зафиксировать ответы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зафиксировать ответы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗафиксироватьОтветы</Action>
+		</Command>
+		<Command name="Назад" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Назад</Action>
+		</Command>
+	</Commands>
+</Form>

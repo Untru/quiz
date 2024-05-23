@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Страницы" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Page name="СтраницаВыбораКвиз" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбора квиз</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбора квиз</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВыбораКвизРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияЗаголовок" id="26">
+							<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите текущую игру
+</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияЗаголовокКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ДекорацияЗаголовокРасширеннаяПодсказка" id="28"/>
+						</LabelDecoration>
+						<Table name="Квизы" id="1">
+							<CommandBarLocation>None</CommandBarLocation>
+							<SelectionMode>SingleRow</SelectionMode>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Квизы</DataPath>
+							<RowPictureDataPath>Квизы.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="КвизыКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="КвизыКоманднаяПанель" id="3"/>
+							<ExtendedTooltip name="КвизыРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="КвизыСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>Квизы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КвизыСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="КвизыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КвизыСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>Квизы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КвизыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="КвизыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КвизыУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>Квизы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КвизыУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="КвизыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">КвизыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="КвизыНаименование" id="14">
+									<DataPath>Квизы.Description</DataPath>
+									<ContextMenu name="КвизыНаименованиеКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="КвизыНаименованиеРасширеннаяПодсказка" id="16"/>
+								</LabelField>
+								<LabelField name="КвизыКод" id="17">
+									<DataPath>Квизы.Code</DataPath>
+									<ContextMenu name="КвизыКодКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="КвизыКодРасширеннаяПодсказка" id="19"/>
+								</LabelField>
+								<LabelField name="КвизыСсылка" id="53">
+									<DataPath>Квизы.Ref</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="КвизыСсылкаКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="КвизыСсылкаРасширеннаяПодсказка" id="55"/>
+								</LabelField>
+								<LabelField name="КвизыДатаПроведения" id="20">
+									<DataPath>Квизы.ДатаПроведения</DataPath>
+									<ContextMenu name="КвизыДатаПроведенияКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="КвизыДатаПроведенияРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<CheckBoxField name="КвизыЗавершен" id="23">
+									<DataPath>Квизы.Завершен</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КвизыЗавершенКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="КвизыЗавершенРасширеннаяПодсказка" id="25"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаАвторизации" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница авторизации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница авторизации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаАвторизацииРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="49">
+							<Width>20</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="41">
+									<Font ref="style:ОбразецНастройкиКолонтитуловШрифт" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Авторизация</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="43"/>
+								</LabelDecoration>
+								<InputField name="Логин" id="38">
+									<DataPath>Логин</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Логин</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ЛогинКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="Пароль" id="35">
+									<DataPath>Пароль</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PasswordMode>true</PasswordMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ПарольКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<UsualGroup name="Группа1" id="47">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ImportantColor</BackColor>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+									<ChildItems>
+										<PictureDecoration name="КнопкаВойти" id="44">
+											<Width>20</Width>
+											<Height>2</Height>
+											<Font ref="style:ГруппаВариантовОтчетовВажнаяШрифт" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка войти</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Войти</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="КнопкаВойтиКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="КнопкаВойтиРасширеннаяПодсказка" id="46"/>
+											<Events>
+												<Event name="Click">КнопкаВойтиНажатие</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация3" id="59">
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="61"/>
+								</LabelDecoration>
+								<LabelDecoration name="ВойтиВедущему" id="56">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Войти ведущему</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ВойтиВедущемуКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ВойтиВедущемуРасширеннаяПодсказка" id="58"/>
+									<Events>
+										<Event name="Click">ВойтиВедущемуНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИграВКвиз</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Квизы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Квизы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Квизы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Логин" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>30</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пароль" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>30</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

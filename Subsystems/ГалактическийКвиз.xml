@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Subsystem uuid="a071ecec-a309-4f7b-a069-3f6a50125df4">
+		<Properties>
+			<Name>ГалактическийКвиз</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки игры</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Комментарий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Квизы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Раунды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Вопросы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Команды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтветыКоманд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыОтветовНаВопрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИграВКвиз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4ae878da-4787-40d0-82e3-6a108b0c37bd</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаявкаНаИгру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктивныеРаунды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СтратегииОценкиПравильногоОтвета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтветыКомандыПоРаунду</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыОтветов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОценкаПравильногоОтвета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОценкаПравильногоОтветаОдинКОдному</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОценкаПравильногоОтветаНечеткоеСравнение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОценкаПравильногоОтветаИИGigaChat</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыГК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b74e16f3-82ee-4e21-b383-48f034eabc46</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f72360a6-11cb-4a0a-94cc-518c8b4cb28c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОтветНаВопрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Квиз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТестПройден</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтратегииОценкиПравильногоОтвета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КомандыПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаВводаПароля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИграВКвиз</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
